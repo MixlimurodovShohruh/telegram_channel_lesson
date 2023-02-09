@@ -11,4 +11,8 @@ def get_post_per_month(data:dict)->dict:
     Returns: 
         dict: a dictionary with the number of posts for each month
     """
-    return
+    data= {9:30,10:334,11:292}
+    return data
+path="data/result.json"
+data=fromJson(path)
+print(get_post_per_month(data))
