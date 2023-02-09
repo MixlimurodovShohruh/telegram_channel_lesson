@@ -16,4 +16,4 @@ def fromJson(file_path: str)->dict:
     return data
 path="data/result.json"
 
-print(fromJson(path))
+(fromJson(path))
