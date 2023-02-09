@@ -10,4 +10,13 @@ def get_number_of_posts(data:dict)->int:
     Returns: 
         int: the number of posts for the given dictionary
     """
-    return
+    count=0
+    data=data["messages"]
+    for i in data:
+        i["type"]=="message"
+        count+=1    
+    return count
+
+path="data/result.json"
+data = fromJson(path)
+print(get_number_of_posts(data))
