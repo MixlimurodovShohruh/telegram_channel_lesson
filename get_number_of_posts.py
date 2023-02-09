@@ -13,8 +13,8 @@ def get_number_of_posts(data:dict)->int:
     count=0
     data=data["messages"]
     for i in data:
-        i["type"]=="message"
-        count+=1    
+        if i["type"]=="message":
+            count+=1    
     return count
 
 path="data/result.json"
